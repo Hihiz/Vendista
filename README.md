@@ -4,5 +4,5 @@
 * Команда
 * Парметр 1-3 (только значения)
 * Статус 
-![image](https://github.com/Hihiz/Vendista/assets/98191494/9f4a2dfe-2ce9-4305-967c-afd6ab79442a)
-![image](https://github.com/Hihiz/Vendista/assets/98191494/9bd02995-34a1-46f0-a900-f777a105c7be)
+![image](https://github.com/Hihiz/Vendista/assets/98191494/92f4a70c-032f-498c-abe1-de5397171c10)
+![image](https://github.com/Hihiz/Vendista/assets/98191494/61f9fe9d-4abd-4493-9303-70402800098d)
