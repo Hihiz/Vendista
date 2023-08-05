@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Vendista.ViewModels.Data>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="main-div">
+    <div class="header">VENDISTA</div>
+     <label>Личный кабинет - Отправка команды на терминал</label>
+    <div>    
+      <table>
+                <tr>
+                    <td>ID Терминала(ов)</td>
+                    <td style="padding-left: 20px;"> Команда</td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea rows="10" cols="20" id="terminal" value="1" class="form-control" style="resize: none;"></textarea>
+                    </td>
+                    <td style="padding-left: 20px; vertical-align: top;">
+                        <div class="select-command">
+        <select id="command" class="form-select">
+                            @foreach (var item in Model)
+                            {
+                    <option value="@item.id" data-raw=@item.RawData data-token=@item.Token>@item.name</option>
+                            }
+        </select>
+    </div>
+                    </td>
+                </tr>
+            </table>
+    </div>
+
+</div>
+
+<div id="out"></div>
+<button id="send" class="btn btn-outline-info send">Отправить</button>
+
+<table id="result-table" class="table" style="margin-top: 2rem">
+    <thead>
+        <tr>
+            <td>№</td>
+            <td>Дата и время</td>
+            <td>Команда</td>
+            <td>Параметр 1</td>
+            <td>Параметр 2</td>
+            <td>Параметр 3</td>
+            <td>Статус</td>
+        </tr>
+
+    </thead>
+    <tbody>
+    </tbody>
+</table>
